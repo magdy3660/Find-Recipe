@@ -30,8 +30,14 @@ body {
 
 /* Search Box Styles */
 .search-box {
-  position: relative;
+  
   display: inline-block;
+}
+/*  search Styles */
+input {
+  padding: 10px;
+  border: 1px solid #6de7c9;
+  border-radius: 5px;
 }
 
 /* Button Styles */
@@ -44,7 +50,7 @@ button {
 }
 
 button:hover {
-  color: rgb(242, 255, 245);
+  color: rgb(197, 252, 210);
   background-color: #68d87b;
 }
 
@@ -63,15 +69,6 @@ button:hover {
 
 #categoryLinks a:hover {
   color: black;
-}
-
-/* Input Styles */
-input {
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #6de7c9;
-  border-radius: 5px;
-  box-sizing: border-box;
 }
 
 input:focus {
