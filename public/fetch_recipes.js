@@ -53,8 +53,10 @@ function displayRecipes(recipes) {
         const recipeCard = document.createElement('div');
         recipeCard.innerHTML = `
             <div class='recipe-cards'>
+                <section>
                 <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}">
-                <div class='recipe-info'>
+                </section>
+                <section class='recipe-info'>
                     <h2>${recipe.strMeal}</h2>
                     <h3>Ingredients:</h3>
                     <ul>
@@ -62,7 +64,7 @@ function displayRecipes(recipes) {
                     </ul>
                     <h2>Instructions</h2>
                     <p>${recipe.strInstructions}</p>
-                </div>
+                </section>
             </div>
         `;
         recipeList.appendChild(recipeCard);

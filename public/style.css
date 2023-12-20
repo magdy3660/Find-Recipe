@@ -1,8 +1,9 @@
-/* Add this CSS to style the chef icon and search box */
+/*  to style the chef icon and search box */
 .search-container {
   position: relative;
   display: inline-block;
 }
+
 
 .chef-icon {
   position: absolute;
@@ -11,15 +12,35 @@
   transform: translateX(-100%)translateY(-50%)  rotate(-45deg);  width: 33px; /* Adjust the width as needed */
   height: 33px; /* Adjust the height as needed */
 }
+
+.image-wrap{
+background-image: url(-35.svg);
+background-size: cover; /* or background-size: contain; */
+background-repeat: no-repeat;
+background-size: 20% 110%; 
+}
+
+#title{
+  font-family:'Times New Roman', Times, serif;
+ color:#4a9121;
+  font-size: 50px;
+  max-width: 100%;
+  text-align: center;
+}
+
+
+
 #intro{
   text-align: center;
 }
+
 body {
     color: rgb(10, 10, 10);
-    font-size: 1.6em;
+    
     background-color: rgb(243, 242, 242);
-    padding: 50px;
 }
+/*title */
+
 .h1{
   color: black;;
 }
@@ -33,6 +54,8 @@ a{
 }
 nav {
   color: black;
+  font-size: 2em;
+  font-style:normal;
 }
 
 #buttons {
@@ -50,8 +73,39 @@ button {
     cursor: pointer; 
     border-radius: 5px; 
 }
+#categoryLinks{
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 2.50em;
+}
+#CategoryLinks,a{
+  margin:5px;
+}
 
+/* Your general styles here */
 
+/* Media query for screens smaller than 600 pixels */
+@media only screen and (max-width: 600px) {
+  /* Styles for screens smaller than 600 pixels */img{
+    max-width: fit-content;
+}
+}
+
+/* Media query for screens between 601 and 900 pixels */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+ img{
+  max-width: fit-content;
+ }
+  /* Styles for screens between 601 and 900 pixels */
+}
+
+/* Media query for screens larger than 901 pixels */
+@media only screen and (min-width: 901px) {
+  /* Styles for screens larger than 901 pixels */
+  img{
+  max-width: fit-content;
+}
+}
 button:hover {
     background-color: #45a049; 
 }
@@ -78,9 +132,9 @@ a {
   }
   
   a:hover {
-    color: #448b4a; 
+    color: #4a9121; 
   }
-  
+/* ra ndom and about us links */
   nav a {
     margin-right: 10px;
     color: rgb(2, 2, 2);

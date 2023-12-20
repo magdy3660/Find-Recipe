@@ -14,13 +14,24 @@
   <title>Find recipes</title>
   <link href="style.css" rel="stylesheet">
 </head>
-<body>     
+<body> 
+  <div class="image-wrap">
+    <!-- For dividing the top section-->
+    <div id="top-section">
+      <div id="nav-section">
   <nav>
    <a href="#" onclick="getRandomRecipe('breakfast')">Random</a>
+   <a href="#" onclick="transitionToAbout()">About</a>
   </nav>
-  <div id="imgimg">
-    <img id="img-cheff"  src="/public/-35.svg">
-  </div> 
+  </div>
+
+  <div id="title-section">
+    <h1 id="title">Find recipes<h1>
+    </div>
+ 
+  </div>
+
+
     <div id="intro">
       <h1> Looking for something new to Cook?</h1>
       <h2> Try searching or clicking random to get recipes!</h2>
@@ -35,13 +46,17 @@
       </div>
       <button onclick="searchRecipes(); hideChefLogo()">Search</button>
       <button onclick="getRandomRecipe(); hideChefLogo()">Random</button>
-      
-      <div id="categoryLinks">
-        <a href="#" onclick="searchByCategory('breakfast')">Breakfast</a>
-        <a href="#" onclick="searchByCategory('Meat')">Meat</a>
-        <a href="#" onclick="searchByCategory('dinner')">Dinner</a>
-        <!-- Add more categories as needed -->
       </div>
+    </div>
+    <div id="categoryLinks">
+      <a href="#" onclick="searchByCategory('breakfast')">Breakfast</a>
+      <a href="#" onclick="searchByCategory('Beef')">Beef</a>
+      <a href="#" onclick="searchByCategory('Dessert')">Dessert</a>
+      <a href="#" onclick="searchByCategory('Goat')">Goat</a>
+      <a href="#" onclick="searchByCategory('Chicken')">Chicken</a>
+      <a href="#" onclick="searchByCategory('Pasta')">Pasta</a>
+      <a href="#" onclick="searchByCategory('Seafood')">Seafood</a>
+      <!-- Add more categories as needed -->
     </div>
 
     <ul id="suggestionList"></ul>
