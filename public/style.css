@@ -1,156 +1,108 @@
-/*  to style the chef icon and search box */
-.search-container {
+/* General Styles */
+body {
+  color: rgb(10, 10, 10);
+  background-color: rgb(243, 242, 242);
+}
+
+/* Image Wrap Styles */
+.image-wrap {
+  background-image: url(cheff.svg);
+  background-repeat: no-repeat;
+  background-size: 20% 110%;
+}
+
+/* Title Section Styles */
+#title-section {
+  text-align: center;
+}
+
+#title {
+  font-family: 'Times New Roman', Times, serif;
+  color: #4a9121;
+  font-size: 50px;
+}
+
+/* Search Section Styles */
+#search {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* Search Box Styles */
+.search-box {
   position: relative;
   display: inline-block;
 }
 
-
-.chef-icon {
-  position: absolute;
-  top: 50%;
-  left: 10px; /* Adjust this value as needed for the desired position */
-  transform: translateX(-100%)translateY(-50%)  rotate(-45deg);  width: 33px; /* Adjust the width as needed */
-  height: 33px; /* Adjust the height as needed */
-}
-
-.image-wrap{
-background-image: url(goodcheff.svg);
-background-size: cover; /* or background-size: contain; */
-background-repeat: no-repeat;
-background-size: 20% 110%; 
-}
-
-#title{
-  font-family:'Times New Roman', Times, serif;
- color:#4a9121;
-  font-size: 50px;
-  max-width: 100%;
-  text-align: center;
-}
-
-
-
-#intro{
-  text-align: center;
-}
-
-body {
-    color: rgb(10, 10, 10);
-    
-    background-color: rgb(243, 242, 242);
-}
-/*title */
-
-.h1{
-  color: black;;
-}
-#buttons{
-    margin-top: 200px;
-    text-align: center;
-}
-a{
-  color: rgb(8, 8, 8);
- 
-}
-nav {
-  color: black;
-  font-size: 2em;
-  font-style:normal;
-}
-
-#buttons {
-    margin-top: 200px;
-    text-align: center;
-    color: rgb(2, 2, 2);
-}
+/* Button Styles */
 button {
-    background-color: #4CAF50;
-    color: white; 
-    padding: 10px 20px; 
-    text-decoration: none;
-    display: inline-block; 
-    font-size: 16px; 
-    cursor: pointer; 
-    border-radius: 5px; 
+  background-color: #4CAF50;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
 }
-#categoryLinks{
+
+button:hover {
+  color: rgb(242, 255, 245);
+  background-color: #68d87b;
+}
+
+/* Category Links Styles */
+#categoryLinks {
   font-size: 1.2em;
   text-align: center;
   margin-top: 2.50em;
 }
-#CategoryLinks,a{
-  margin:5px;
+
+#categoryLinks a {
+  margin: 5px;
+  color: green;
+  text-decoration: none;
 }
 
-/* Your general styles here */
-
-/* Media query for screens smaller than 600 pixels */
-@media only screen and (max-width: 600px) {
-  /* Styles for screens smaller than 600 pixels */img{
-    max-width: fit-content;
-}
+#categoryLinks a:hover {
+  color: black;
 }
 
-/* Media query for screens between 601 and 900 pixels */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
- img{
-  max-width: fit-content;
- }
-  /* Styles for screens between 601 and 900 pixels */
-}
-
-/* Media query for screens larger than 901 pixels */
-@media only screen and (min-width: 901px) {
-  /* Styles for screens larger than 901 pixels */
-  img{
-  max-width: fit-content;
-}
-}
-button:hover {
-    background-color: #45a049; 
-}
-
+/* Input Styles */
 input {
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #6de7c9;
-    border-radius: 5px;
-    box-sizing: border-box;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #6de7c9;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 input:focus {
-    outline: none;
-    border-color: #4CAF50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
 }
 
+/* Navigation Styles */
+#nav a {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
 
-a {
-    color: #404140; 
-    text-decoration: none; 
-    transition: color 0.3s; /* Add a smooth color transition on hover */
-  }
-  
-  a:hover {
-    color: #4a9121; 
-  }
-/* ra ndom and about us links */
-  nav a {
-    margin-right: 10px;
-    color: rgb(2, 2, 2);
-    font-size: 40px;
-  }
+#nav a:hover {
+  color: #4a9121;
+}
 
- 
-  .recipe-cards {
-    display: flex;
-    align-items: center;
-    border: 5px solid rgb(2, 2, 2);
-    margin: 10px;
-  }
-   /* for each recipe */
- .recipe-info,img {
-    padding-left: 50px;
-   
- }
-  
+/* Recipe Cards Styles */
+.recipe-cards {
+  display: flex;
+  align-items: center;
+  border: 5px solid rgb(2, 2, 2);
+  margin: 10px;
+}
+
+.recipe-info {
+  padding-left: 40px;
+}
+
+.recipe-info.img {
+  padding-left: 10px;
+}
