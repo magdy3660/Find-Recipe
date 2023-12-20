@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find recipes</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find recipes</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>     
+  <nav>
+   <a href="#" onclick="getRandomRecipe('breakfast')">Random</a>
+  </nav>
+  <div id="imgimg">
+    <img id="img-cheff"  src="/public/-35.svg">
+  </div> 
+    <div id="intro">
+      <h1> Looking for something new to Cook?</h1>
+      <h2> Try searching or clicking random to get recipes!</h2>
+     
+    </div>
+
+    <div id="buttons">
+      <h1>Recipe Search</h1>
+      <div class="search-container">
+        <div id="chefLogo"><img class="chef-icon" src="chef.svg" alt="Chef Icon"></div>
+        <input type="text" id="searchInput" placeholder="Enter recipe name" oninput="showSuggestions()">
+      </div>
+      <button onclick="searchRecipes(); hideChefLogo()">Search</button>
+      <button onclick="getRandomRecipe(); hideChefLogo()">Random</button>
+      
+      <div id="categoryLinks">
+        <a href="#" onclick="searchByCategory('breakfast')">Breakfast</a>
+        <a href="#" onclick="searchByCategory('Meat')">Meat</a>
+        <a href="#" onclick="searchByCategory('dinner')">Dinner</a>
+        <!-- Add more categories as needed -->
+      </div>
+    </div>
+
+    <ul id="suggestionList"></ul>
+
+    <div id="recipeList"></div>
+  </div>
+
+  <!-- Include the script file -->
+  <script src="fetch_recipes.js"></script>
+  <script>
+    const chefLogo = document.getElementById('img-cheff');
+    function hideChefLogo() {
+      chefLogo.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
