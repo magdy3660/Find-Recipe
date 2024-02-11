@@ -26,15 +26,12 @@ The "Find Recipes" project is a web application that allows users to search for 
 1. **searchRecipes()**
    - Fetches recipes based on user input from an external API.
    - Calls `displayRecipes()` to show the results.
-   ![image](https://github.com/abdomagdy0/Find-Recipe/assets/91535529/fe9ee4bd-693c-4f2e-8374-3f42a74a55d0)  
-2. **getIngredientsList(recipe)**
-   - Generates an HTML list of ingredients and measures for a given recipe.
-****
 
 
 3. **getRandomRecipe()**
    - Fetches a random recipe from an external API.
    - Calls `displayRecipes()` to show the result.
+   ![image](https://github.com/abdomagdy0/Find-Recipe/assets/91535529/fe9ee4bd-693c-4f2e-8374-3f42a74a55d0)  
 
 
 4. **searchByCategory(category)**
