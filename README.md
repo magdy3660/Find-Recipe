@@ -1,4 +1,5 @@
 # Find Recipes Project Documentation
+![image](https://github.com/abdomagdy0/Find-Recipe/assets/91535529/d0367ef4-205a-4914-9bd9-afd26f28d480)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -73,7 +74,7 @@ The HTML structure is organized into sections, including navigation, title, sear
 
 2. **getIngredientsList(recipe)**
    - Generates an HTML list of ingredients and measures for a given recipe.
-
+****
 3. **getRandomRecipe()**
    - Fetches a random recipe from an external API.
    - Calls `displayRecipes()` to show the result.
