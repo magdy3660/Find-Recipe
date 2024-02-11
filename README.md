@@ -3,11 +3,7 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Project Structure](#project-structure)
-3. [HTML Structure](#html-structure)
-4. [CSS Styles](#css-styles)
 5. [JavaScript Functionality](#javascript-functionality)
-6. [Usage](#usage)
 
 ---
 
