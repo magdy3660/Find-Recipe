@@ -75,9 +75,12 @@ The HTML structure is organized into sections, including navigation, title, sear
 2. **getIngredientsList(recipe)**
    - Generates an HTML list of ingredients and measures for a given recipe.
 ****
+![image](https://github.com/abdomagdy0/Find-Recipe/assets/91535529/44ff96d3-590a-4936-8fa4-09072719bb03)
+
 3. **getRandomRecipe()**
    - Fetches a random recipe from an external API.
    - Calls `displayRecipes()` to show the result.
+![image](https://github.com/abdomagdy0/Find-Recipe/assets/91535529/fe9ee4bd-693c-4f2e-8374-3f42a74a55d0)
 
 4. **searchByCategory(category)**
    - Fetches recipes based on a selected category from an external API.
